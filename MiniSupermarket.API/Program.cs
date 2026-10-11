@@ -1,20 +1,141 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 
-// Thêm Controllers và dịch vụ Swagger Gen
+using MiniSupermarket.API.Data;
+using System.Text;
+
+var builder = WebApplication.CreateBuilder(args);
+
+// =========================
+// JWT Authentication
+// =========================
+
+var jwtSecret = builder.Configuration["JwtSettings:Secret"]
+    ?? "SupermarketSecretKeyDoAnMonHoc2026SecureString!!";
+
+builder.Services
+    .AddAuthentication(options =>
+    {
+        options.DefaultAuthenticateScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+
+        options.DefaultChallengeScheme =
+            JwtBearerDefaults.AuthenticationScheme;
+    })
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(jwtSecret)
+            ),
+
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
+
+// =========================
+// Controllers
+// =========================
+
 builder.Services.AddControllers();
+
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(); // Bắt buộc phải có dòng này
+
+// =========================
+// Database
+// =========================
+
+var connectionString =
+    builder.Configuration.GetConnectionString("DefaultConnection");
+
+builder.Services.AddDbContext<SupermarketDbContext>(options =>
+    options.UseSqlServer(connectionString));
+
+// =========================
+// Swagger
+// =========================
+
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Title = "Mini Supermarket API",
+        Version = "v1"
+    });
+
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Name = "Authorization",
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT",
+        In = ParameterLocation.Header,
+        Description = "Nhập JWT Token"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
+});
+
+// =========================
+// Build
+// =========================
 
 var app = builder.Build();
 
-// Cấu hình sử dụng Swagger ở môi trường phát triển
+// =========================
+// Auto Migrate Database
+// =========================
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>();
+    try
+    {
+        var db = services.GetRequiredService<SupermarketDbContext>();
+        logger.LogInformation("Đang kiểm tra và cập nhật Database migrations...");
+        db.Database.Migrate();
+        logger.LogInformation("Database đã sẵn sàng!");
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "Lỗi khi tự động migrate Database.");
+    }
+}
+
+// =========================
+// Middleware
+// =========================
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(); // Bắt buộc phải có dòng này để bật giao diện web
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();
