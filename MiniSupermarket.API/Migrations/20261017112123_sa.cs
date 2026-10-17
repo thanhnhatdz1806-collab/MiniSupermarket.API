@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MiniSupermarket.API.Migrations
 {
     /// <inheritdoc />
-    public partial class lan001 : Migration
+    public partial class sa : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
