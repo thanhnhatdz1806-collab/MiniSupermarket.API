@@ -109,7 +109,7 @@ namespace MiniSupermarket.WinForms
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTitle.Height = 52;
-            this.lblTitle.Text = "HỆ THỐNG BÁCH HÓA THỰC PHẨM HEALTHY MART";
+            this.lblTitle.Text = "Hệ Thống Cửa hàng Đặc sản Vùng miền & Đồ ăn vặt";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.lblTitle.BackColor = System.Drawing.Color.White;
@@ -146,7 +146,7 @@ namespace MiniSupermarket.WinForms
             this.ClientSize = new System.Drawing.Size(1180, 700);
             this.MinimumSize = new System.Drawing.Size(1100, 650);
             this.Name = "FormMainShell";
-            this.Text = "Hệ thống Bách Hóa Thực Phẩm Healthy Mart";
+            this.Text = "Hệ Thống Cửa hàng Đặc sản Vùng miền & Đồ ăn vặt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormMainShell_Load);
             this.ResumeLayout(false);

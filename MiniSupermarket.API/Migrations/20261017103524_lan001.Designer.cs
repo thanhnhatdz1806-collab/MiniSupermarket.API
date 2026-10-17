@@ -12,7 +12,7 @@ using MiniSupermarket.API.Data;
 namespace MiniSupermarket.API.Migrations
 {
     [DbContext(typeof(SupermarketDbContext))]
-    [Migration("20261010050244_lan001")]
+    [Migration("20261017103524_lan001")]
     partial class lan001
     {
         /// <inheritdoc />
@@ -60,121 +60,121 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             BrandId = 1,
-                            BrandName = "Healthy Mart",
+                            BrandName = "Đặc Sản Việt",
                             Country = "Việt Nam",
-                            Description = "Thương hiệu riêng của cửa hàng với các sản phẩm rau củ, trái cây và thực phẩm sạch.",
+                            Description = "Thương hiệu chuyên cung cấp các loại đặc sản truyền thống từ nhiều vùng miền.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 2,
-                            BrandName = "Quaker",
-                            Country = "Mỹ",
-                            Description = "Thương hiệu yến mạch và ngũ cốc ăn sáng giàu chất xơ.",
+                            BrandName = "Bánh Pía Tân Huê Viên",
+                            Country = "Việt Nam",
+                            Description = "Thương hiệu bánh pía và các loại bánh đặc sản Sóc Trăng.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 3,
-                            BrandName = "TH true MILK",
+                            BrandName = "Kẹo Dừa Bến Tre",
                             Country = "Việt Nam",
-                            Description = "Thương hiệu sữa tươi và các sản phẩm từ sữa.",
+                            Description = "Thương hiệu đặc sản nổi tiếng với các loại kẹo dừa truyền thống.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 4,
-                            BrandName = "Vinamilk",
+                            BrandName = "Ô Mai Hồng Lam",
                             Country = "Việt Nam",
-                            Description = "Thương hiệu sữa và các sản phẩm dinh dưỡng phổ biến tại Việt Nam.",
+                            Description = "Thương hiệu chuyên các sản phẩm ô mai và trái cây chế biến.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 5,
-                            BrandName = "Alsafi",
-                            Country = "Campuchia",
-                            Description = "Thương hiệu sữa hạt và đồ uống có nguồn gốc thực vật.",
+                            BrandName = "Bánh Đậu Xanh Rồng Vàng",
+                            Country = "Việt Nam",
+                            Description = "Thương hiệu bánh đậu xanh đặc sản Hải Dương.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 6,
-                            BrandName = "Bertolli",
-                            Country = "Ý",
-                            Description = "Thương hiệu dầu oliu và các sản phẩm theo phong cách ẩm thực Địa Trung Hải.",
+                            BrandName = "Tây Ninh",
+                            Country = "Việt Nam",
+                            Description = "Thương hiệu và nguồn cung các sản phẩm muối tôm, muối chấm và gia vị đặc sản Tây Ninh.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 7,
-                            BrandName = "Organic Farm VN",
+                            BrandName = "Trung Nguyên Legend",
                             Country = "Việt Nam",
-                            Description = "Rau củ, trứng và các sản phẩm nông nghiệp hữu cơ.",
+                            Description = "Thương hiệu cà phê Việt Nam với các dòng cà phê rang xay và cà phê hòa tan.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 8,
-                            BrandName = "Eat Clean VN",
+                            BrandName = "Tân Cương Xanh",
                             Country = "Việt Nam",
-                            Description = "Các sản phẩm phục vụ chế độ ăn Eat Clean và ăn uống lành mạnh.",
+                            Description = "Thương hiệu trà xanh và trà đặc sản Thái Nguyên.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 9,
-                            BrandName = "Dalat Green",
+                            BrandName = "Bình Định",
                             Country = "Việt Nam",
-                            Description = "Trà thảo mộc và các loại đồ uống có nguồn gốc tự nhiên.",
+                            Description = "Nguồn đặc sản địa phương gồm bánh tráng, bánh ít và các sản phẩm truyền thống.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 10,
-                            BrandName = "Blue Diamond",
-                            Country = "Mỹ",
-                            Description = "Thương hiệu hạnh nhân và các sản phẩm chế biến từ hạnh nhân.",
+                            BrandName = "Vissan",
+                            Country = "Việt Nam",
+                            Description = "Thương hiệu thực phẩm chế biến, xúc xích và các sản phẩm thịt đóng gói.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 11,
-                            BrandName = "Bee Gold",
+                            BrandName = "Kinh Đô",
                             Country = "Việt Nam",
-                            Description = "Mật ong nguyên chất và các sản phẩm từ mật ong.",
+                            Description = "Thương hiệu bánh kẹo với nhiều dòng bánh quy, bánh bông lan và bánh ăn nhẹ.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 12,
-                            BrandName = "Nutri Seed",
+                            BrandName = "Bibica",
                             Country = "Việt Nam",
-                            Description = "Superfood, hạt dinh dưỡng và các sản phẩm bổ sung dinh dưỡng.",
+                            Description = "Thương hiệu bánh kẹo và thực phẩm ăn nhẹ phục vụ nhu cầu tiêu dùng hàng ngày.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 13,
-                            BrandName = "Green Life",
-                            Country = "Việt Nam",
-                            Description = "Thực phẩm chay và các sản phẩm có nguồn gốc từ thực vật.",
+                            BrandName = "Orion",
+                            Country = "Hàn Quốc",
+                            Description = "Thương hiệu bánh snack, bánh quy và các sản phẩm ăn vặt đóng gói.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 14,
-                            BrandName = "Nature Food",
-                            Country = "Việt Nam",
-                            Description = "Thực phẩm khô, ngũ cốc và các sản phẩm tự nhiên tiện lợi.",
+                            BrandName = "Oishi",
+                            Country = "Philippines",
+                            Description = "Thương hiệu snack, bánh que và các sản phẩm ăn vặt đóng gói.",
                             IsActive = true
                         },
                         new
                         {
                             BrandId = 15,
-                            BrandName = "Fresh Choice",
+                            BrandName = "Mekong Food",
                             Country = "Việt Nam",
-                            Description = "Thực phẩm đông lạnh, thịt cá và các sản phẩm tiện lợi chất lượng cao.",
+                            Description = "Thương hiệu phục vụ nhóm đặc sản miền Tây, trái cây sấy và thực phẩm đóng gói.",
                             IsActive = true
                         });
                 });
@@ -207,92 +207,92 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             CategoryId = 1,
-                            CategoryName = "Rau củ quả hữu cơ",
-                            Description = "Các loại rau xanh, củ và quả tươi được trồng theo phương pháp hữu cơ."
+                            CategoryName = "Đặc sản miền Bắc",
+                            Description = "Các đặc sản miền Bắc như bánh đậu xanh, cốm, ô mai, chè Thái Nguyên và các món ăn truyền thống."
                         },
                         new
                         {
                             CategoryId = 2,
-                            CategoryName = "Ngũ cốc & Hạt dinh dưỡng",
-                            Description = "Yến mạch, hạt chia, hạnh nhân, óc chó và các loại hạt giàu dinh dưỡng."
+                            CategoryName = "Đặc sản miền Trung",
+                            Description = "Các đặc sản miền Trung như tré, nem chua, chả bò Đà Nẵng, mè xửng Huế và bánh tráng."
                         },
                         new
                         {
                             CategoryId = 3,
-                            CategoryName = "Sữa hạt & Sữa chua hữu cơ",
-                            Description = "Sữa hạnh nhân, sữa đậu nành, sữa óc chó và các loại sữa chua hữu cơ."
+                            CategoryName = "Đặc sản miền Nam",
+                            Description = "Các đặc sản miền Nam như bánh pía Sóc Trăng, kẹo dừa Bến Tre, khô cá và các loại bánh dân gian."
                         },
                         new
                         {
                             CategoryId = 4,
-                            CategoryName = "Thực phẩm Eat Clean",
-                            Description = "Các sản phẩm phù hợp chế độ ăn Eat Clean như ức gà, cơm gạo lứt và salad."
+                            CategoryName = "Bánh kẹo truyền thống",
+                            Description = "Các loại bánh kẹo truyền thống Việt Nam như bánh đậu xanh, bánh cốm, kẹo dừa và kẹo lạc."
                         },
                         new
                         {
                             CategoryId = 5,
-                            CategoryName = "Gia vị & Dầu thực vật tự nhiên",
-                            Description = "Dầu oliu, mật ong, muối hồng và các loại gia vị có nguồn gốc tự nhiên."
+                            CategoryName = "Snack & Đồ ăn vặt",
+                            Description = "Các món ăn vặt phổ biến như snack khoai tây, bánh que, rong biển ăn liền và bánh phồng."
                         },
                         new
                         {
                             CategoryId = 6,
-                            CategoryName = "Trái cây tươi & nhập khẩu",
-                            Description = "Các loại trái cây tươi trong nước và nhập khẩu như táo, nho, kiwi và bơ."
+                            CategoryName = "Khô gà & Khô bò",
+                            Description = "Các sản phẩm khô gà lá chanh, khô bò miếng, khô bò sợi và các loại thịt khô tẩm gia vị."
                         },
                         new
                         {
                             CategoryId = 7,
-                            CategoryName = "Thịt cá sạch",
-                            Description = "Thịt bò, thịt heo, cá hồi và các loại hải sản tươi sống được kiểm soát chất lượng."
+                            CategoryName = "Khô cá & Hải sản khô",
+                            Description = "Các loại khô cá, mực khô, cá chỉ vàng, tôm khô và hải sản khô đặc sản vùng miền."
                         },
                         new
                         {
                             CategoryId = 8,
-                            CategoryName = "Trứng & Chế phẩm từ trứng",
-                            Description = "Trứng gà ta, trứng gà hữu cơ, trứng cút và các sản phẩm chế biến từ trứng."
+                            CategoryName = "Mứt & Trái cây sấy",
+                            Description = "Các loại mứt trái cây, chuối sấy, mít sấy, xoài sấy và trái cây sấy dẻo."
                         },
                         new
                         {
                             CategoryId = 9,
-                            CategoryName = "Trà & Đồ uống tốt cho sức khỏe",
-                            Description = "Trà thảo mộc, nước ép nguyên chất, kombucha và các loại đồ uống lành mạnh."
+                            CategoryName = "Hạt & Đậu ăn vặt",
+                            Description = "Các loại hạt điều, đậu phộng, hạt bí, hạt hướng dương và đậu rang tẩm gia vị."
                         },
                         new
                         {
                             CategoryId = 10,
-                            CategoryName = "Bánh & Snack lành mạnh",
-                            Description = "Bánh yến mạch, snack rong biển, trái cây sấy và các món ăn nhẹ lành mạnh."
+                            CategoryName = "Trà & Cà phê đặc sản",
+                            Description = "Trà Thái Nguyên, trà sen, cà phê Buôn Ma Thuột và các sản phẩm trà, cà phê vùng miền."
                         },
                         new
                         {
                             CategoryId = 11,
-                            CategoryName = "Đậu & Sản phẩm từ đậu",
-                            Description = "Đậu hũ, tempeh và các loại đậu khô giàu protein thực vật."
+                            CategoryName = "Gia vị & Nước chấm",
+                            Description = "Các loại nước mắm, mắm đặc sản, muối tôm Tây Ninh, sa tế và gia vị truyền thống."
                         },
                         new
                         {
                             CategoryId = 12,
-                            CategoryName = "Superfood & Thực phẩm bổ sung",
-                            Description = "Matcha, spirulina, bột rau củ và các sản phẩm thực phẩm bổ sung dinh dưỡng."
+                            CategoryName = "Mì & Đồ ăn liền",
+                            Description = "Các sản phẩm mì, miến, bún khô, phở khô và đồ ăn liền tiện lợi."
                         },
                         new
                         {
                             CategoryId = 13,
-                            CategoryName = "Thực phẩm đông lạnh",
-                            Description = "Rau củ, thịt cá và các loại thực phẩm được bảo quản đông lạnh tiện lợi."
+                            CategoryName = "Đặc sản đóng hộp",
+                            Description = "Các loại đặc sản được đóng hộp hoặc đóng gói như cá hộp, pate, thịt chế biến và thực phẩm tiện lợi."
                         },
                         new
                         {
                             CategoryId = 14,
-                            CategoryName = "Thực phẩm khô",
-                            Description = "Các loại mì, bún, phở, nấm khô và thực phẩm khô tiện lợi cho gia đình."
+                            CategoryName = "Đồ uống & Nước giải khát",
+                            Description = "Các loại nước giải khát, nước trái cây, nước dừa, nước sâm và đồ uống đặc sản vùng miền."
                         },
                         new
                         {
                             CategoryId = 15,
-                            CategoryName = "Thực phẩm chay",
-                            Description = "Các sản phẩm chay từ thực vật như thịt chay, đậu phụ và thực phẩm giàu protein thực vật."
+                            CategoryName = "Combo quà tặng đặc sản",
+                            Description = "Các combo bánh kẹo, trà, cà phê, hạt dinh dưỡng và đặc sản vùng miền dùng làm quà biếu."
                         });
                 });
 
@@ -1012,155 +1012,155 @@ namespace MiniSupermarket.API.Migrations
                         {
                             ProductId = 1,
                             Barcode = "8938501234561",
-                            BrandId = 7,
+                            BrandId = 5,
                             CategoryId = 1,
-                            CostPrice = 18000m,
+                            CostPrice = 32000m,
                             IsActive = true,
-                            Price = 25000m,
-                            ProductName = "Rau cải bó xôi hữu cơ 300g",
-                            StockQuantity = 50,
-                            SupplierId = 1,
-                            Unit = "gói"
+                            Price = 45000m,
+                            ProductName = "Bánh đậu xanh Rồng Vàng 200g",
+                            StockQuantity = 35,
+                            SupplierId = 4,
+                            Unit = "hộp"
                         },
                         new
                         {
                             ProductId = 2,
                             Barcode = "8938501234562",
-                            BrandId = 7,
+                            BrandId = 4,
                             CategoryId = 1,
-                            CostPrice = 24000m,
+                            CostPrice = 45000m,
                             IsActive = true,
-                            Price = 32000m,
-                            ProductName = "Cà chua bi hữu cơ 500g",
-                            StockQuantity = 40,
-                            SupplierId = 1,
+                            Price = 65000m,
+                            ProductName = "Ô mai mơ Hồng Lam 250g",
+                            StockQuantity = 28,
+                            SupplierId = 4,
                             Unit = "hộp"
                         },
                         new
                         {
                             ProductId = 3,
                             Barcode = "8938501234563",
-                            BrandId = 2,
+                            BrandId = 1,
                             CategoryId = 2,
-                            CostPrice = 50000m,
+                            CostPrice = 26000m,
                             IsActive = true,
-                            Price = 65000m,
-                            ProductName = "Yến mạch nguyên hạt Quaker 500g",
-                            StockQuantity = 30,
-                            SupplierId = 4,
+                            Price = 38000m,
+                            ProductName = "Mè xửng Huế truyền thống 300g",
+                            StockQuantity = 42,
+                            SupplierId = 2,
                             Unit = "gói"
                         },
                         new
                         {
                             ProductId = 4,
                             Barcode = "8938501234564",
-                            BrandId = 10,
+                            BrandId = 9,
                             CategoryId = 2,
-                            CostPrice = 72000m,
+                            CostPrice = 29000m,
                             IsActive = true,
-                            Price = 95000m,
-                            ProductName = "Hạnh nhân rang Blue Diamond 250g",
-                            StockQuantity = 25,
-                            SupplierId = 4,
+                            Price = 42000m,
+                            ProductName = "Bánh tráng mè Bình Định 500g",
+                            StockQuantity = 50,
+                            SupplierId = 2,
                             Unit = "gói"
                         },
                         new
                         {
                             ProductId = 5,
                             Barcode = "8938501234565",
-                            BrandId = 5,
+                            BrandId = 3,
                             CategoryId = 3,
-                            CostPrice = 60000m,
+                            CostPrice = 24000m,
                             IsActive = true,
-                            Price = 78000m,
-                            ProductName = "Sữa hạnh nhân Alsafi 946ml",
-                            StockQuantity = 35,
-                            SupplierId = 5,
-                            Unit = "hộp"
+                            Price = 35000m,
+                            ProductName = "Kẹo dừa Bến Tre 300g",
+                            StockQuantity = 45,
+                            SupplierId = 3,
+                            Unit = "gói"
                         },
                         new
                         {
                             ProductId = 6,
                             Barcode = "8938501234566",
-                            BrandId = 3,
+                            BrandId = 2,
                             CategoryId = 3,
-                            CostPrice = 41000m,
+                            CostPrice = 56000m,
                             IsActive = true,
-                            Price = 55000m,
-                            ProductName = "Sữa chua TH true MILK không đường 500g",
-                            StockQuantity = 20,
-                            SupplierId = 5,
+                            Price = 78000m,
+                            ProductName = "Bánh pía Tân Huê Viên 400g",
+                            StockQuantity = 24,
+                            SupplierId = 3,
                             Unit = "hộp"
                         },
                         new
                         {
                             ProductId = 7,
                             Barcode = "8938501234567",
-                            BrandId = 8,
+                            BrandId = 11,
                             CategoryId = 4,
-                            CostPrice = 52000m,
+                            CostPrice = 36000m,
                             IsActive = true,
-                            Price = 69000m,
-                            ProductName = "Ức gà Eat Clean 500g",
-                            StockQuantity = 60,
-                            SupplierId = 3,
+                            Price = 52000m,
+                            ProductName = "Bánh quy bơ truyền thống 250g",
+                            StockQuantity = 32,
+                            SupplierId = 4,
                             Unit = "hộp"
                         },
                         new
                         {
                             ProductId = 8,
                             Barcode = "8938501234568",
-                            BrandId = 8,
-                            CategoryId = 4,
-                            CostPrice = 31000m,
+                            BrandId = 13,
+                            CategoryId = 5,
+                            CostPrice = 18000m,
                             IsActive = true,
-                            Price = 42000m,
-                            ProductName = "Cơm gạo lứt Eat Clean 250g",
-                            StockQuantity = 45,
-                            SupplierId = 3,
-                            Unit = "hộp"
+                            Price = 28000m,
+                            ProductName = "Snack khoai tây vị truyền thống gói 150g",
+                            StockQuantity = 60,
+                            SupplierId = 5,
+                            Unit = "gói"
                         },
                         new
                         {
                             ProductId = 9,
                             Barcode = "8938501234569",
-                            BrandId = 6,
-                            CategoryId = 5,
-                            CostPrice = 110000m,
+                            BrandId = 1,
+                            CategoryId = 6,
+                            CostPrice = 45000m,
                             IsActive = true,
-                            Price = 145000m,
-                            ProductName = "Dầu oliu Bertolli Extra Virgin 500ml",
-                            StockQuantity = 20,
+                            Price = 65000m,
+                            ProductName = "Khô gà lá chanh 200g",
+                            StockQuantity = 40,
                             SupplierId = 6,
-                            Unit = "chai"
+                            Unit = "hộp"
                         },
                         new
                         {
                             ProductId = 10,
                             Barcode = "8938501234570",
-                            BrandId = 11,
-                            CategoryId = 5,
-                            CostPrice = 88000m,
+                            BrandId = 1,
+                            CategoryId = 6,
+                            CostPrice = 62000m,
                             IsActive = true,
-                            Price = 120000m,
-                            ProductName = "Mật ong nguyên chất Bee Gold 500ml",
-                            StockQuantity = 15,
-                            SupplierId = 7,
-                            Unit = "chai"
+                            Price = 85000m,
+                            ProductName = "Khô bò miếng đặc biệt 100g",
+                            StockQuantity = 25,
+                            SupplierId = 6,
+                            Unit = "gói"
                         },
                         new
                         {
                             ProductId = 11,
                             Barcode = "8938501234571",
                             BrandId = 1,
-                            CategoryId = 6,
-                            CostPrice = 98000m,
+                            CategoryId = 7,
+                            CostPrice = 145000m,
                             IsActive = true,
-                            Price = 129000m,
-                            ProductName = "Táo Envy nhập khẩu 1kg",
-                            StockQuantity = 30,
-                            SupplierId = 2,
-                            Unit = "kg"
+                            Price = 185000m,
+                            ProductName = "Mực khô loại vừa 250g",
+                            StockQuantity = 18,
+                            SupplierId = 7,
+                            Unit = "gói"
                         },
                         new
                         {
@@ -1168,40 +1168,40 @@ namespace MiniSupermarket.API.Migrations
                             Barcode = "8938501234572",
                             BrandId = 1,
                             CategoryId = 7,
-                            CostPrice = 135000m,
+                            CostPrice = 92000m,
                             IsActive = true,
-                            Price = 169000m,
-                            ProductName = "Cá hồi phi lê Na Uy 300g",
+                            Price = 125000m,
+                            ProductName = "Cá chỉ vàng khô 500g",
                             StockQuantity = 22,
-                            SupplierId = 8,
+                            SupplierId = 7,
                             Unit = "gói"
                         },
                         new
                         {
                             ProductId = 13,
                             Barcode = "8938501234573",
-                            BrandId = 7,
+                            BrandId = 15,
                             CategoryId = 8,
-                            CostPrice = 40000m,
+                            CostPrice = 38000m,
                             IsActive = true,
-                            Price = 52000m,
-                            ProductName = "Trứng gà ta hữu cơ 10 quả",
-                            StockQuantity = 70,
-                            SupplierId = 9,
-                            Unit = "hộp"
+                            Price = 55000m,
+                            ProductName = "Mít sấy giòn 200g",
+                            StockQuantity = 35,
+                            SupplierId = 8,
+                            Unit = "gói"
                         },
                         new
                         {
                             ProductId = 14,
                             Barcode = "8938501234574",
-                            BrandId = 9,
+                            BrandId = 12,
                             CategoryId = 9,
-                            CostPrice = 34000m,
+                            CostPrice = 70000m,
                             IsActive = true,
-                            Price = 48000m,
-                            ProductName = "Trà hoa cúc Dalat Green 20 túi lọc",
-                            StockQuantity = 55,
-                            SupplierId = 10,
+                            Price = 95000m,
+                            ProductName = "Hạt điều rang muối Bình Phước 250g",
+                            StockQuantity = 30,
+                            SupplierId = 9,
                             Unit = "hộp"
                         },
                         new
@@ -1210,41 +1210,41 @@ namespace MiniSupermarket.API.Migrations
                             Barcode = "8938501234575",
                             BrandId = 8,
                             CategoryId = 10,
-                            CostPrice = 28000m,
+                            CostPrice = 48000m,
                             IsActive = true,
-                            Price = 39000m,
-                            ProductName = "Bánh quy yến mạch Eat Clean 200g",
-                            StockQuantity = 65,
-                            SupplierId = 11,
+                            Price = 68000m,
+                            ProductName = "Trà xanh Thái Nguyên 200g",
+                            StockQuantity = 26,
+                            SupplierId = 10,
                             Unit = "gói"
                         },
                         new
                         {
                             ProductId = 16,
                             Barcode = "8938501234576",
-                            BrandId = 7,
+                            BrandId = 6,
                             CategoryId = 11,
-                            CostPrice = 12000m,
+                            CostPrice = 21000m,
                             IsActive = true,
-                            Price = 18000m,
-                            ProductName = "Đậu hũ non hữu cơ Organic Farm VN 300g",
-                            StockQuantity = 80,
-                            SupplierId = 12,
-                            Unit = "hộp"
+                            Price = 32000m,
+                            ProductName = "Muối tôm Tây Ninh 200g",
+                            StockQuantity = 55,
+                            SupplierId = 11,
+                            Unit = "hũ"
                         },
                         new
                         {
                             ProductId = 17,
                             Barcode = "8938501234577",
-                            BrandId = 12,
+                            BrandId = 14,
                             CategoryId = 12,
-                            CostPrice = 100000m,
+                            CostPrice = 33000m,
                             IsActive = true,
-                            Price = 135000m,
-                            ProductName = "Bột Spirulina Nutri Seed 100g",
-                            StockQuantity = 18,
+                            Price = 48000m,
+                            ProductName = "Miến dong đặc sản 500g",
+                            StockQuantity = 38,
                             SupplierId = 12,
-                            Unit = "hũ"
+                            Unit = "gói"
                         });
                 });
 
@@ -1345,122 +1345,122 @@ namespace MiniSupermarket.API.Migrations
                         new
                         {
                             SupplierId = 1,
-                            Address = "15 Nguyễn Văn Cừ, Phường 4, TP. Đà Lạt, Lâm Đồng",
-                            Email = "lienhe@nongsandalat.vn",
+                            Address = "12 Điện Biên Phủ, TP. Sơn La, Sơn La",
+                            Email = "contact@dacsantaybac.vn",
                             PhoneNumber = "02633812345",
-                            SupplierName = "Công ty TNHH Nông sản sạch Đà Lạt"
+                            SupplierName = "Công ty TNHH Đặc sản Tây Bắc Việt"
                         },
                         new
                         {
                             SupplierId = 2,
-                            Address = "125 Nguyễn Hữu Thọ, Phường Tân Phong, Quận 7, TP. Hồ Chí Minh",
-                            Email = "sales@freshviet.vn",
+                            Address = "45 Nguyễn Văn Linh, TP. Đà Nẵng",
+                            Email = "kinhdoanh@dacsanmientrung.vn",
                             PhoneNumber = "02838123456",
-                            SupplierName = "Công ty CP Trái cây nhập khẩu Fresh Việt"
+                            SupplierName = "Công ty CP Đặc sản Miền Trung"
                         },
                         new
                         {
                             SupplierId = 3,
-                            Address = "86 Điện Biên Phủ, Phường 17, Quận Bình Thạnh, TP. Hồ Chí Minh",
-                            Email = "info@eatcleansg.vn",
+                            Address = "28 Nguyễn Trãi, TP. Cần Thơ",
+                            Email = "lienhe@dacsanmientay.vn",
                             PhoneNumber = "02838234567",
-                            SupplierName = "Công ty TNHH Thực phẩm Eat Clean Sài Gòn"
+                            SupplierName = "Công ty TNHH Đặc sản Miền Tây"
                         },
                         new
                         {
                             SupplierId = 4,
-                            Address = "42 Trường Chinh, Phường 12, Quận Tân Bình, TP. Hồ Chí Minh",
-                            Email = "order@ngucocmyviet.vn",
+                            Address = "86 Trần Hưng Đạo, TP. Hải Dương, Hải Dương",
+                            Email = "banhang@banhkeotruyenthong.vn",
                             PhoneNumber = "02838345678",
-                            SupplierName = "Công ty TNHH Ngũ cốc & Hạt Mỹ Việt"
+                            SupplierName = "Công ty TNHH Bánh kẹo truyền thống Việt"
                         },
                         new
                         {
                             SupplierId = 5,
-                            Address = "28 Trần Thái Tông, Phường Dịch Vọng, Quận Cầu Giấy, Hà Nội",
-                            Email = "cskh@suaxanh.vn",
+                            Address = "21 Lê Duẩn, TP. Hồ Chí Minh",
+                            Email = "snackviet@example.vn",
                             PhoneNumber = "02438456789",
-                            SupplierName = "Công ty CP Sữa & Chế phẩm sữa Xanh"
+                            SupplierName = "Cơ sở sản xuất Snack Việt"
                         },
                         new
                         {
                             SupplierId = 6,
-                            Address = "72 Nguyễn Thái Bình, Phường Nguyễn Thái Bình, Quận 1, TP. Hồ Chí Minh",
-                            Email = "contact@diatrunghai.vn",
+                            Address = "77 Nguyễn Huệ, TP. Quy Nhơn, Bình Định",
+                            Email = "sales@thucphamkho.example.vn",
                             PhoneNumber = "02838567890",
-                            SupplierName = "Công ty TNHH Dầu ăn Địa Trung Hải"
+                            SupplierName = "Công ty TNHH Thực phẩm khô Việt"
                         },
                         new
                         {
                             SupplierId = 7,
-                            Address = "18 Nguyễn Tất Thành, Thị trấn U Minh, Huyện U Minh, Cà Mau",
-                            Email = "htx@matonguminh.vn",
+                            Address = "18 Trần Hưng Đạo, TP. Phú Quốc, Kiên Giang",
+                            Email = "haisan@phuquoc.example.vn",
                             PhoneNumber = "02916678901",
-                            SupplierName = "HTX Mật ong U Minh"
+                            SupplierName = "Cơ sở Hải sản khô Phú Quốc"
                         },
                         new
                         {
                             SupplierId = 8,
-                            Address = "35 Phan Đăng Lưu, Phường 3, Quận Phú Nhuận, TP. Hồ Chí Minh",
-                            Email = "sales@haisannauy.vn",
+                            Address = "52 Cách Mạng Tháng Tám, TP. Hồ Chí Minh",
+                            Email = "info@traicaysay.example.vn",
                             PhoneNumber = "02838789012",
-                            SupplierName = "Công ty TNHH Hải sản Na Uy Việt Nam"
+                            SupplierName = "Công ty CP Trái cây sấy Việt"
                         },
                         new
                         {
                             SupplierId = 9,
-                            Address = "125 Đường Tỉnh 825, Xã Đức Hòa Hạ, Huyện Đức Hòa, Long An",
-                            Email = "trangtrai@trungsachla.vn",
+                            Address = "35 Quốc lộ 14, TP. Đồng Xoài, Bình Phước",
+                            Email = "htx@hatdieubp.example.vn",
                             PhoneNumber = "02723890123",
-                            SupplierName = "Trang trại Trứng sạch Long An"
+                            SupplierName = "Hợp tác xã Hạt điều Bình Phước"
                         },
                         new
                         {
                             SupplierId = 10,
-                            Address = "56 Trần Phú, Phường Lộc Tiến, TP. Bảo Lộc, Lâm Đồng",
-                            Email = "info@dalatgreen.vn",
+                            Address = "16 Hoàng Văn Thụ, TP. Thái Nguyên, Thái Nguyên",
+                            Email = "tra@thainguyen.example.vn",
                             PhoneNumber = "02633901234",
-                            SupplierName = "Công ty TNHH Trà thảo mộc Dalat Green"
+                            SupplierName = "Công ty TNHH Trà đặc sản Thái Nguyên"
                         },
                         new
                         {
                             SupplierId = 11,
-                            Address = "210 Võ Văn Ngân, Phường Bình Thọ, TP. Thủ Đức, TP. Hồ Chí Minh",
-                            Email = "ban-hang@snacklanhmanh.vn",
+                            Address = "60 Cách Mạng Tháng Tám, TP. Tây Ninh, Tây Ninh",
+                            Email = "giavi@tayninh.example.vn",
                             PhoneNumber = "02838012345",
-                            SupplierName = "Công ty CP Bánh & Snack lành mạnh"
+                            SupplierName = "Công ty TNHH Gia vị Tây Ninh"
                         },
                         new
                         {
                             SupplierId = 12,
-                            Address = "89 Quang Trung, Phường 10, Quận Gò Vấp, TP. Hồ Chí Minh",
-                            Email = "lienhe@superfoodxanh.vn",
+                            Address = "90 Trần Hưng Đạo, TP. Long Xuyên, An Giang",
+                            Email = "thucpham@angiang.example.vn",
                             PhoneNumber = "02838123400",
-                            SupplierName = "Công ty TNHH Đậu hũ & Superfood Xanh"
+                            SupplierName = "Công ty CP Thực phẩm khô An Giang"
                         },
                         new
                         {
                             SupplierId = 13,
-                            Address = "145 Nguyễn Văn Cừ, Phường An Khánh, Quận Ninh Kiều, Cần Thơ",
-                            Email = "contact@rauhuucomekong.vn",
+                            Address = "25 Nguyễn Văn Cừ, TP. Hồ Chí Minh",
+                            Email = "dacsandonghop@example.vn",
                             PhoneNumber = "02923678901",
-                            SupplierName = "Công ty TNHH Rau củ hữu cơ Mekong"
+                            SupplierName = "Cơ sở Đặc sản đóng hộp Việt"
                         },
                         new
                         {
                             SupplierId = 14,
-                            Address = "320 Nguyễn Văn Quá, Phường Đông Hưng Thuận, Quận 12, TP. Hồ Chí Minh",
-                            Email = "sales@vietnature.vn",
+                            Address = "40 Phan Đình Phùng, TP. Bảo Lộc, Lâm Đồng",
+                            Email = "douong@dacsan.example.vn",
                             PhoneNumber = "02839876543",
-                            SupplierName = "Công ty CP Thực phẩm xanh Việt Nature"
+                            SupplierName = "Công ty TNHH Đồ uống đặc sản Việt"
                         },
                         new
                         {
                             SupplierId = 15,
-                            Address = "78 Đại lộ Bình Dương, Phường Phú Hòa, TP. Thủ Dầu Một, Bình Dương",
-                            Email = "info@nongnsanviet.vn",
+                            Address = "100 Nguyễn Huệ, TP. Hồ Chí Minh",
+                            Email = "quatang@dacsan.example.vn",
                             PhoneNumber = "02743781234",
-                            SupplierName = "Công ty TNHH Nông sản hữu cơ An Việt"
+                            SupplierName = "Công ty CP Quà tặng đặc sản Việt Nam"
                         });
                 });
 
