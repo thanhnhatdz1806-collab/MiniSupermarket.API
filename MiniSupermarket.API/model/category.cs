@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
@@ -21,5 +22,20 @@ namespace MiniSupermarket.API.Models
         // Quan hệ 1 - N: Một danh mục có nhiều sản phẩm
         [JsonIgnore] // Tránh lỗi lặp vòng vô tận khi serialize JSON
         public virtual ICollection<Product>? Products { get; set; }
+=======
+﻿namespace MiniSupermarket.API.Models
+{
+    // Lớp biểu diễn thực thể Nhóm hàng hóa trong siêu thị mini
+    public class Category
+    {
+        // Mã định danh nhóm hàng (Khóa chính)
+        public int CategoryId { get; set; }
+
+        // Tên nhóm hàng (Bắt buộc, không được để trống)
+        public string CategoryName { get; set; } = string.Empty;
+
+        // Mô tả chi tiết về nhóm hàng (Có thể để trống)
+        public string? Description { get; set; }
+>>>>>>> upstream/main
     }
 }

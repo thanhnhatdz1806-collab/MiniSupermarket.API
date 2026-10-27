@@ -1,11 +1,19 @@
+<<<<<<< HEAD
 using System;
 using System.Net;
+=======
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+>>>>>>> upstream/main
 using System.Windows.Forms;
 
 namespace MiniSupermarket.WinForms
 {
     internal static class Program
     {
+<<<<<<< HEAD
         [STAThread]
         static void Main()
         {
@@ -49,6 +57,17 @@ namespace MiniSupermarket.WinForms
                 System.IO.File.WriteAllText("crash.log", ex.ToString());
                 MessageBox.Show("Khởi động ứng dụng lỗi:\n" + ex.Message, "Lỗi khởi động", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+=======
+        /// <summary>
+        /// The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new FormCategoryManagement());
+>>>>>>> upstream/main
         }
     }
 }
